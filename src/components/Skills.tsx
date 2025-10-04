@@ -183,11 +183,6 @@ const Skills = () => {
             <Github size={22} />
             Git & GitHub
           </div>
-        </div>
-      )}
-
-      {activeTab === "Langugaes" && (
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           <div
             className={`p-2 ${
               dark ? "bg-[#262626]" : "skillsShadow"
@@ -204,12 +199,24 @@ const Skills = () => {
             <Typescript />
             Typescript
           </div>
+        </div>
+      )}
+
+      {activeTab === "Langugaes" && (
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           <div
             className={`p-2 ${
               dark ? "bg-[#262626]" : "skillsShadow"
             } rounded flex items-center gap-2`}
           >
             English
+          </div>
+          <div
+            className={`p-2 ${
+              dark ? "bg-[#262626]" : "skillsShadow"
+            } rounded flex items-center gap-2`}
+          >
+            Uzbek
           </div>
         </div>
       )}

@@ -23,6 +23,7 @@ body {
 .darkShadow {
   box-shadow: 0 0 5px #161614;
 }
+
 .blur {
   background-image: url(../assets/images/divesea.png);
   background-repeat: no-repeat;
@@ -30,5 +31,6 @@ body {
 }
 
 .skillsShadow {
-  box-shadow: 0 0 10px #d1d5dc;
+  box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
 }
