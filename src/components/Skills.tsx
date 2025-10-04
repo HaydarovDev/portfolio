@@ -31,7 +31,7 @@ export const MyButton = styled(Button)({
 
 const Skills = () => {
   const { dark } = useTheme();
-  const tabs = ["Expertise", "Software", "Language"];
+  const tabs = ["Knowledge", "Technologies", "Langugaes"];
   const [activeTab, setActiveTab] = useState("Expertise");
   return (
     <section
