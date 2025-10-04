@@ -19,11 +19,12 @@ const Projects = () => {
         <h1 className="text-3xl font-bold mb-6">Projects</h1>
         <MyButton
           sx={{
-            borderBottom: "0.5px solid white",
-            color: "white",
+            borderBottom: dark ? "0.5px solid white" : "0.5px solid black",
+            color: dark ? "white" : "black",
             textTransform: "capitalize",
             "&:hover": {
               backgroundColor: "#262626",
+              color: "white",
             },
           }}
         >

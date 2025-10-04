@@ -14,6 +14,12 @@ import { Button } from "@mui/material";
 import styled from "@emotion/styled";
 import MaterialIU from "./MaterialUI";
 import { useTheme } from "@/context/UseTheme";
+import Laptop from "@/assets/images/icons/Laptop";
+import Responsive from "@/assets/images/icons/Responsive";
+import Color from "@/assets/images/icons/Color";
+import Flash from "@/assets/images/icons/Flash";
+import VersionControl from "@/assets/images/icons/VersionControl";
+import Puzzle from "@/assets/images/icons/Puzzle";
 
 export const MyButton = styled(Button)({
   padding: "8px 10px",
@@ -65,6 +71,7 @@ const Skills = () => {
               dark ? "bg-[#262626]" : "skillsShadow"
             } rounded flex items-center gap-2`}
           >
+            <Laptop />
             Frontend Development
           </div>
           <div
@@ -72,6 +79,7 @@ const Skills = () => {
               dark ? "bg-[#262626]" : "skillsShadow"
             } rounded flex items-center gap-2`}
           >
+            <Responsive />
             Responsive Web Design
           </div>
           <div
@@ -79,6 +87,7 @@ const Skills = () => {
               dark ? "bg-[#262626]" : "skillsShadow"
             } rounded flex items-center gap-2`}
           >
+            <Color />
             UI/UX Design
           </div>
           <div
@@ -86,6 +95,7 @@ const Skills = () => {
               dark ? "bg-[#262626]" : "skillsShadow"
             } rounded flex items-center gap-2`}
           >
+            <Flash />
             Performance Optimization
           </div>
           <div
@@ -93,6 +103,7 @@ const Skills = () => {
               dark ? "bg-[#262626]" : "skillsShadow"
             } rounded flex items-center gap-2`}
           >
+            <VersionControl />
             Version Control
           </div>
           <div
@@ -100,6 +111,7 @@ const Skills = () => {
               dark ? "bg-[#262626]" : "skillsShadow"
             } rounded flex items-center gap-2`}
           >
+            <Puzzle />
             Reusable Components
           </div>
         </div>

@@ -1,11 +1,8 @@
-"use client";
-
 import { useTheme } from "@/context/UseTheme";
 import React from "react";
 
-const Email = () => {
+const Flash = () => {
   const { dark } = useTheme();
-
   return (
     <svg
       width="20px"
@@ -15,17 +12,17 @@ const Email = () => {
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M17 20.5H7C4 20.5 2 19 2 15.5V8.5C2 5 4 3.5 7 3.5H17C20 3.5 22 5 22 8.5V15.5C22 19 20 20.5 17 20.5Z"
+        d="M8.68006 12.7201H10.4201V16.7701C10.4201 17.3701 11.1601 17.6501 11.5601 17.2001L15.8201 12.3601C16.1901 11.9401 15.8901 11.2801 15.3301 11.2801H13.5901V7.23008C13.5901 6.63008 12.8501 6.35008 12.4501 6.80008L8.19006 11.6401C7.82006 12.0601 8.12006 12.7201 8.68006 12.7201Z"
         stroke={dark ? "#D3D3D3" : "#1f1f1f"}
-        strokeWidth="1.5"
+        strokeWidth="1"
         strokeMiterlimit="10"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
       <path
-        d="M17 9L13.87 11.5C12.84 12.32 11.15 12.32 10.12 11.5L7 9"
+        d="M11.97 22C17.4928 22 21.97 17.5228 21.97 12C21.97 6.47715 17.4928 2 11.97 2C6.44712 2 1.96997 6.47715 1.96997 12C1.96997 17.5228 6.44712 22 11.97 22Z"
         stroke={dark ? "#D3D3D3" : "#1f1f1f"}
-        strokeWidth="1.5"
+        strokeWidth="1"
         strokeMiterlimit="10"
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -34,4 +31,4 @@ const Email = () => {
   );
 };
 
-export default Email;
+export default Flash;
