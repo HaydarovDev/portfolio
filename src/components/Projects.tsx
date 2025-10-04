@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import { MyButton } from "./Skills";
 import diveSea from "@/assets/images/divesea.png";
 import Image from "next/image";
 import Bitcoin from "@/assets/images/icons/Bitcoin";
@@ -17,19 +16,6 @@ const Projects = () => {
     >
       <header>
         <h1 className="text-3xl font-bold mb-6">Projects</h1>
-        <MyButton
-          sx={{
-            borderBottom: dark ? "0.5px solid white" : "0.5px solid black",
-            color: dark ? "white" : "black",
-            textTransform: "capitalize",
-            "&:hover": {
-              backgroundColor: "#262626",
-              color: "white",
-            },
-          }}
-        >
-          In progress
-        </MyButton>
       </header>
       <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-2">
         <div className={`${dark ? "darkShadow" : "shadow-md"}`}>

@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <footer className="w-full py-10">
       <h1 className="pb-7 text-2xl">You can follow me</h1>
-      <ul className="flex justify-center sm:justify-center md:justify-start gap-4 sm:gap-10">
+      <ul className="flex justify-between sm:justify-center md:justify-start gap-4 sm:gap-10">
         <Link
           href="https://github.com/HaydarovDev"
           target="_blank"

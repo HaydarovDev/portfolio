@@ -5,10 +5,9 @@ import avatar from "@/assets/images/avatar.jpg";
 
 const HomePage = () => {
   return (
-    <article className="w-full mt-10 md:mt-0 min-h-[80vh] flex flex-col justify-center border-b-[0.5px] border-[#2F2F2F]">
+    <article className="w-full py-10 mt-14 md:mt-0 min-h-[80vh] flex flex-col justify-center border-b-[0.5px] border-[#2F2F2F]">
       <Code size={50} />
-      <h1 className="my-6 text-3xl font-bold uppercase">Asadbek Haydarov</h1>
-      <div className="flex flex-col-reverse md:flex-row items-center gap-10">
+      <div className="flex flex-col md:flex-row items-center gap-10">
         <Image
           loading="lazy"
           src={avatar}
@@ -19,6 +18,9 @@ const HomePage = () => {
           priority={false}
         />
         <div>
+          <h1 className="my-6 text-3xl font-bold uppercase">
+            Asadbek Haydarov
+          </h1>
           <h1 className="my-2 text-2xl font-semibold">Front Developer</h1>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
