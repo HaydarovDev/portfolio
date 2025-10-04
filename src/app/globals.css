@@ -20,12 +20,15 @@ body {
   transition: 150ms;
 }
 
-.cardShadow {
+.darkShadow {
   box-shadow: 0 0 5px #161614;
 }
-
 .blur {
   background-image: url(../assets/images/divesea.png);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.skillsShadow {
+  box-shadow: 0 0 10px #d1d5dc;
 }

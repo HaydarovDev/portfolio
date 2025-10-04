@@ -5,10 +5,19 @@ import avatar from "@/assets/images/avatar.jpg";
 
 const HomePage = () => {
   return (
-    <article className="w-full min-h-[80vh] flex flex-col justify-center border-b-[0.5px] border-[#2F2F2F]">
+    <article className="w-full mt-10 md:mt-0 min-h-[80vh] flex flex-col justify-center border-b-[0.5px] border-[#2F2F2F]">
       <Code size={50} />
-      <h1 className="my-4 text-3xl font-bold uppercase">Asadbek Haydarov</h1>
-      <div className="flex items-center gap-10">
+      <h1 className="my-6 text-3xl font-bold uppercase">Asadbek Haydarov</h1>
+      <div className="flex flex-col-reverse md:flex-row items-center gap-10">
+        <Image
+          loading="lazy"
+          src={avatar}
+          className="sm:rounded rounded-full"
+          width={200}
+          height={200}
+          alt="avatar 404"
+          priority={false}
+        />
         <div>
           <h1 className="my-2 text-2xl font-semibold">Front Developer</h1>
           <p>
@@ -21,15 +30,6 @@ const HomePage = () => {
             Ipsum nihil debitis sequi corrupti fugiat
           </p>
         </div>
-        <Image
-          loading="lazy"
-          src={avatar}
-          className="rounded"
-          width={200}
-          height={200}
-          alt="avatar 404"
-          priority={false}
-        />
       </div>
     </article>
   );

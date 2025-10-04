@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <div className="w-[50%] flex justify-center items-center mx-auto flex-col">
+      <div className="w-[90%] sm:w-[80%] md:w-[70%] xl:w-[55%] lg:w-[70%] flex justify-center items-center mx-auto flex-col">
         <HomePage />
         <Experiences />
         <Skills />

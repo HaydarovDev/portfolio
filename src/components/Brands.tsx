@@ -4,7 +4,7 @@ import React from "react";
 const Brands = () => {
   return (
     <article
-      className="w-full py-10 border-b-[0.5px] border-[#2F2F2F]"
+      className="w-full py-14 border-b-[0.5px] border-[#2F2F2F]"
       id="brands"
     >
       <header>
