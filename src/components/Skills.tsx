@@ -32,7 +32,7 @@ export const MyButton = styled(Button)({
 const Skills = () => {
   const { dark } = useTheme();
   const tabs = ["Knowledge", "Technologies", "Langugaes"];
-  const [activeTab, setActiveTab] = useState("Expertise");
+  const [activeTab, setActiveTab] = useState("Knowledge");
   return (
     <section
       className="w-full py-14 border-b-[0.5px] border-[#2F2F2F]"
@@ -64,7 +64,7 @@ const Skills = () => {
         ))}
       </div>
 
-      {activeTab === "Expertise" && (
+      {activeTab === "Knowledge" && (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           <div
             className={`p-2 ${
@@ -117,7 +117,7 @@ const Skills = () => {
         </div>
       )}
 
-      {activeTab === "Software" && (
+      {activeTab === "Technologies" && (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           <div
             className={`p-2 ${
@@ -186,7 +186,7 @@ const Skills = () => {
         </div>
       )}
 
-      {activeTab === "Language" && (
+      {activeTab === "Langugaes" && (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           <div
             className={`p-2 ${

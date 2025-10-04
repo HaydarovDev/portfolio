@@ -8,10 +8,11 @@ const Brands = () => {
       id="brands"
     >
       <header>
-        <h1 className="text-3xl font-bold mb-6">Brands</h1>
-        <p className="py-2">I had worked with</p>
+        <h1 className="text-3xl font-bold mb-6">Clients</h1>
       </header>
-      <ItPark />
+      <div className="flex justify-center">
+        <ItPark />
+      </div>
     </article>
   );
 };
