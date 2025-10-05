@@ -19,24 +19,24 @@ const Footer = () => {
             className="flex items-center gap-1"
           >
             <Github size={15} />
-            <span>Github</span>
+            Github
           </Link>
           <Link
             href="https://www.linkedin.com/in/asadbek-haydarov/"
             className="flex items-center gap-1"
           >
             <LinkedIn />
-            <span>LinkedIn</span>
+            LinkedIn
           </Link>
           <Link
             href="https://www.instagram.com/haydarov_dev/"
             className="flex items-center gap-1"
           >
             <Instagram />
-            <span>Instagram</span>
+            Instagram
           </Link>
           <Link href="" className="flex items-center gap-1">
-            <Telegram /> <span>Telegram</span>
+            <Telegram /> Telegram
           </Link>
         </ul>
         <p className="mt-8 text-center">
