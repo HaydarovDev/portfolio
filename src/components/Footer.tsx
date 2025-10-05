@@ -39,9 +39,7 @@ const Footer = () => {
             <Telegram /> Telegram
           </Link>
         </ul>
-        <p className="mt-8 text-center">
-          © 2025 NitroBrain. All rights reserved.
-        </p>
+        <p className="mt-8 text-center">© 2025 All rights reserved.</p>
       </div>
     </footer>
   );
