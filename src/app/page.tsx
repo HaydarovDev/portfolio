@@ -6,6 +6,12 @@ import Header from "@/components/Header";
 import HomePage from "@/components/HomePage";
 import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Asadbek Haydarov",
+  description: "Welcome to my portfolio",
+};
 
 export default function Home() {
   return (
