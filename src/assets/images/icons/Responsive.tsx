@@ -1,11 +1,11 @@
-import { useTheme } from "@/context/UseTheme";
+import { useTheme } from "next-themes";
 import React from "react";
 
 const Responsive = () => {
-  const { dark } = useTheme();
+  const { theme } = useTheme();
   return (
     <svg
-      fill={dark ? "#D3D3D3" : "#1f1f1f"}
+      fill={theme === "dark" ? "#D3D3D3" : "#1f1f1f"}
       width="20px"
       height="20px"
       viewBox="0 0 24 24"

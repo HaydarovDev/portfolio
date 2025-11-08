@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
-import ThemeProvider from "@/context/ThemeProvider";
+import ThemeProvider from "@/components/ThemeProvider";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -11,8 +11,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Asadbek App",
-  description: "No flash dark mode",
+  title: "Asadbek Haydarov",
+  description: "Welcome to my portfolio!",
 };
 
 export default function RootLayout({
@@ -22,23 +22,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning className={poppins.variable}>
-      <head>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              (() => {
-                try {
-                  const stored = localStorage.getItem('theme');
-                  const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-                  const dark = stored ? stored === 'dark' : systemDark;
-                  if (dark) document.documentElement.classList.add('dark');
-                  else document.documentElement.classList.remove('dark');
-                } catch (_) {}
-              })();
-            `,
-          }}
-        />
-      </head>
       <body
         className={`${poppins.className} bg-white dark:bg-black text-gray-900 dark:text-gray-100`}
       >

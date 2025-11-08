@@ -1,13 +1,13 @@
-import { useTheme } from "@/context/UseTheme";
+import { useTheme } from "next-themes";
 import React from "react";
 
 const Javascript = () => {
-  const { dark } = useTheme();
+  const { theme } = useTheme();
 
   return (
     <svg
-      stroke={dark ? "#D3D3D3" : "#1f1f1f"}
-      fill={dark ? "#D3D3D3" : "#1f1f1f"}
+      stroke={theme === "dark" ? "#D3D3D3" : "#1f1f1f"}
+      fill={theme === "dark" ? "#D3D3D3" : "#1f1f1f"}
       strokeWidth="0"
       viewBox="0 0 512 512"
       height="22px"

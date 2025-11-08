@@ -12,14 +12,14 @@ import Javascript from "@/assets/images/icons/Javascript";
 import Typescript from "@/assets/images/icons/Typescript";
 import { Button } from "@mui/material";
 import styled from "@emotion/styled";
-import MaterialIU from "./MaterialUI";
-import { useTheme } from "@/context/UseTheme";
 import Laptop from "@/assets/images/icons/Laptop";
 import Responsive from "@/assets/images/icons/Responsive";
 import Color from "@/assets/images/icons/Color";
 import Flash from "@/assets/images/icons/Flash";
 import VersionControl from "@/assets/images/icons/VersionControl";
 import Puzzle from "@/assets/images/icons/Puzzle";
+import { useTheme } from "next-themes";
+import MaterialIU from "@/assets/images/icons/MaterialUI";
 
 export const MyButton = styled(Button)({
   padding: "8px 10px",
@@ -30,7 +30,8 @@ export const MyButton = styled(Button)({
 });
 
 const Skills = () => {
-  const { dark } = useTheme();
+  const { theme } = useTheme();
+
   const tabs = ["Knowledge", "Technologies", "Langugaes"];
   const [activeTab, setActiveTab] = useState("Knowledge");
   return (
@@ -47,11 +48,16 @@ const Skills = () => {
             sx={{
               borderBottom:
                 activeTab === tab
-                  ? dark
+                  ? theme === "dark"
                     ? "0.5px solid white"
                     : "0.5px solid black"
                   : "2px solid transparent",
-              color: activeTab === tab ? (dark ? "white" : "black") : "gray",
+              color:
+                activeTab === tab
+                  ? theme === "dark"
+                    ? "white"
+                    : "black"
+                  : "gray",
               textTransform: "capitalize",
               "&:hover": {
                 backgroundColor: "#262626",
@@ -68,7 +74,7 @@ const Skills = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           <div
             className={`p-2 ${
-              dark ? "bg-[#262626]" : "skillsShadow"
+              theme === "dark" ? "bg-[#262626]" : "skillsShadow"
             } rounded flex items-center gap-2`}
           >
             <Laptop />
@@ -76,7 +82,7 @@ const Skills = () => {
           </div>
           <div
             className={`p-2 ${
-              dark ? "bg-[#262626]" : "skillsShadow"
+              theme === "dark" ? "bg-[#262626]" : "skillsShadow"
             } rounded flex items-center gap-2`}
           >
             <Responsive />
@@ -84,7 +90,7 @@ const Skills = () => {
           </div>
           <div
             className={`p-2 ${
-              dark ? "bg-[#262626]" : "skillsShadow"
+              theme === "dark" ? "bg-[#262626]" : "skillsShadow"
             } rounded flex items-center gap-2`}
           >
             <Color />
@@ -92,7 +98,7 @@ const Skills = () => {
           </div>
           <div
             className={`p-2 ${
-              dark ? "bg-[#262626]" : "skillsShadow"
+              theme === "dark" ? "bg-[#262626]" : "skillsShadow"
             } rounded flex items-center gap-2`}
           >
             <Flash />
@@ -100,7 +106,7 @@ const Skills = () => {
           </div>
           <div
             className={`p-2 ${
-              dark ? "bg-[#262626]" : "skillsShadow"
+              theme === "dark" ? "bg-[#262626]" : "skillsShadow"
             } rounded flex items-center gap-2`}
           >
             <VersionControl />
@@ -108,7 +114,7 @@ const Skills = () => {
           </div>
           <div
             className={`p-2 ${
-              dark ? "bg-[#262626]" : "skillsShadow"
+              theme === "dark" ? "bg-[#262626]" : "skillsShadow"
             } rounded flex items-center gap-2`}
           >
             <Puzzle />
@@ -121,7 +127,7 @@ const Skills = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           <div
             className={`p-2 ${
-              dark ? "bg-[#262626]" : "skillsShadow"
+              theme === "dark" ? "bg-[#262626]" : "skillsShadow"
             } rounded flex items-center gap-2`}
           >
             <Vite />
@@ -129,23 +135,19 @@ const Skills = () => {
           </div>
           <div
             className={`p-2 ${
-              dark ? "bg-[#262626]" : "skillsShadow"
+              theme === "dark" ? "bg-[#262626]" : "skillsShadow"
             } rounded flex items-center gap-2`}
           >
             <Sass />
             Sass / SCSS
           </div>
-          <div
-            className={`p-2 ${
-              dark ? "bg-[#262626]" : "skillsShadow"
-            } rounded flex items-center gap-2`}
-          >
+          <div className={`p-2 dark:red rounded flex items-center gap-2`}>
             <Figma />
             Figma
           </div>
           <div
             className={`p-2 ${
-              dark ? "bg-[#262626]" : "skillsShadow"
+              theme === "dark" ? "bg-[#262626]" : "skillsShadow"
             } rounded flex items-center gap-2`}
           >
             <ReactIcon />
@@ -153,7 +155,7 @@ const Skills = () => {
           </div>
           <div
             className={`p-2 ${
-              dark ? "bg-[#262626]" : "skillsShadow"
+              theme === "dark" ? "bg-[#262626]" : "skillsShadow"
             } rounded flex items-center gap-2`}
           >
             <NextLogo />
@@ -161,7 +163,7 @@ const Skills = () => {
           </div>
           <div
             className={`p-2 ${
-              dark ? "bg-[#262626]" : "skillsShadow"
+              theme === "dark" ? "bg-[#262626]" : "skillsShadow"
             } rounded flex items-center gap-2`}
           >
             <Tailwind />
@@ -169,7 +171,7 @@ const Skills = () => {
           </div>
           <div
             className={`p-2 ${
-              dark ? "bg-[#262626]" : "skillsShadow"
+              theme === "dark" ? "bg-[#262626]" : "skillsShadow"
             } rounded flex items-center gap-2`}
           >
             <MaterialIU />
@@ -177,7 +179,7 @@ const Skills = () => {
           </div>
           <div
             className={`p-2 ${
-              dark ? "bg-[#262626]" : "skillsShadow"
+              theme === "dark" ? "bg-[#262626]" : "skillsShadow"
             } rounded flex items-center gap-2`}
           >
             <Github size={22} />
@@ -185,7 +187,7 @@ const Skills = () => {
           </div>
           <div
             className={`p-2 ${
-              dark ? "bg-[#262626]" : "skillsShadow"
+              theme === "dark" ? "bg-[#262626]" : "skillsShadow"
             } rounded flex items-center gap-2`}
           >
             <Javascript />
@@ -193,7 +195,7 @@ const Skills = () => {
           </div>
           <div
             className={`p-2 ${
-              dark ? "bg-[#262626]" : "skillsShadow"
+              theme === "dark" ? "bg-[#262626]" : "skillsShadow"
             } rounded flex items-center gap-2`}
           >
             <Typescript />
@@ -206,14 +208,14 @@ const Skills = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           <div
             className={`p-2 ${
-              dark ? "bg-[#262626]" : "skillsShadow"
+              theme === "dark" ? "bg-[#262626]" : "skillsShadow"
             } rounded flex items-center gap-2`}
           >
             English
           </div>
           <div
             className={`p-2 ${
-              dark ? "bg-[#262626]" : "skillsShadow"
+              theme === "dark" ? "bg-[#262626]" : "skillsShadow"
             } rounded flex items-center gap-2`}
           >
             Uzbek

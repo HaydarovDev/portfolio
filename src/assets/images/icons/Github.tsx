@@ -1,9 +1,11 @@
-import { useTheme } from "@/context/UseTheme";
+"use client";
+
 import { IconParams } from "@/types/IconParams";
+import { useTheme } from "next-themes";
 import React from "react";
 
 const Github = ({ size }: IconParams) => {
-  const { dark } = useTheme();
+  const { theme } = useTheme();
 
   return (
     <svg
@@ -23,7 +25,7 @@ const Github = ({ size }: IconParams) => {
         <g
           id="Dribbble-Light-Preview"
           transform="translate(-140.000000, -7559.000000)"
-          fill={dark ? "#D3D3D3" : "#1f1f1f"}
+          fill={theme === "dark" ? "#D3D3D3" : "#1f1f1f"}
         >
           <g id="icons" transform="translate(56.000000, 160.000000)">
             <path
