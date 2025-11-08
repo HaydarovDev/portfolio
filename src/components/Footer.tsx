@@ -1,5 +1,3 @@
-"use client";
-
 import Github from "@/assets/images/icons/Github";
 import Instagram from "@/assets/images/icons/Instagram";
 import LinkedIn from "@/assets/images/icons/LinkedIn";
