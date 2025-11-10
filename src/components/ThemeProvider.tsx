@@ -13,12 +13,7 @@ const ThemeProvider = ({ children }: { children: ReactNode }) => {
   if (!mounted) return <>{children}</>;
 
   return (
-    <NextThemeProvider
-      attribute="class"
-      enableSystem
-      defaultTheme="dark"
-      disableTransitionOnChange
-    >
+    <NextThemeProvider attribute="class" enableSystem defaultTheme="dark">
       {children}
     </NextThemeProvider>
   );

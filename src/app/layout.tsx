@@ -23,6 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning className={poppins.variable}>
       <body
+        suppressHydrationWarning
         className={`${poppins.className} bg-white dark:bg-black text-gray-900 dark:text-gray-100`}
       >
         <ThemeProvider>{children}</ThemeProvider>
