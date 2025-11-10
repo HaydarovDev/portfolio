@@ -1,16 +1,13 @@
 "use client";
 
-import { useTheme } from "next-themes";
 import React from "react";
 
 const ItPark = () => {
-  const { theme } = useTheme();
-
   return (
     <svg
       width="150px"
       height="90px"
-      fill={theme === "dark" ? "#D3D3D3" : "#1f1f1f"}
+      fill="currentColor"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 1992.97 657.8"
     >

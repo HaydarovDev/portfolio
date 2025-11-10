@@ -1,12 +1,9 @@
-import { useTheme } from "next-themes";
 import React from "react";
 
 const Vite = () => {
-  const { theme } = useTheme();
-
   return (
     <svg
-      stroke={theme === "dark" ? "#D3D3D3" : "#1f1f1f"}
+      stroke="currentColor"
       fill="currentColor"
       strokeWidth="0"
       role="img"

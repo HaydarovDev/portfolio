@@ -1,11 +1,9 @@
-import { useTheme } from "next-themes";
 import React from "react";
 
 const MaterialIU = () => {
-  const { theme } = useTheme();
   return (
     <svg
-      fill={theme === "dark" ? "#D3D3D3" : "#1f1f1f"}
+      fill="currentColor"
       width="22px"
       height="22px"
       viewBox="0 0 24 24"
