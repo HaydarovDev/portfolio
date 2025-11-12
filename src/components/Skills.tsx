@@ -141,7 +141,11 @@ const Skills = () => {
             <Sass />
             Sass / SCSS
           </div>
-          <div className={`p-2 dark:red rounded flex items-center gap-2`}>
+          <div
+            className={`p-2 ${
+              theme === "dark" ? "bg-[#262626]" : "skillsShadow"
+            } rounded flex items-center gap-2`}
+          >
             <Figma />
             Figma
           </div>
