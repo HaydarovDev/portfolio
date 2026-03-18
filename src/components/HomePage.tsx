@@ -7,7 +7,7 @@ const HomePage = () => {
   return (
     <article className="w-full py-10 mt-14 md:mt-0 min-h-[80vh] flex flex-col justify-center border-b-[0.5px] border-[#2F2F2F]">
       <Code size={50} />
-      <div className="flex flex-col md:flex-row items-center gap-10">
+      <div className="flex flex-col md:flex-row items-center gap-10 py-5">
         <Image
           loading="lazy"
           src={avatar}
