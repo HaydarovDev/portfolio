@@ -21,15 +21,10 @@ const HomePage = () => {
           <h1 className="my-6 text-3xl font-bold uppercase">
             Asadbek Haydarov
           </h1>
-          <h1 className="my-2 text-2xl font-semibold">Front Developer</h1>
+          <h1 className="my-2 text-2xl font-semibold">Front-end Engineer</h1>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Consectetur nisi quis ratione nesciunt voluptatum asperiores quos
-            quibusdam suscipit. Aspernatur, suscipit.
-          </p>
-          <p className="mt-1">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, quasi!
-            Ipsum nihil debitis sequi corrupti fugiat
+            Hi! I am front-end engineer. I built websites with NextJS in
+            Typescript and TailwindCSS and also know NodeJS and ExpressJS
           </p>
         </div>
       </div>
